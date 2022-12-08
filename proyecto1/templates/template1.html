@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Es muy facil crear plantillas</h1>
+    <h2 style="color: red;"> Nombre: {{ nombre }} </h2>
+    <h2 style="color: green"> Apellido: {{ apellido }} </h2>
+    <h2 style="color:purple"> Edad: {{ edad }} </h2>
+
+    <h2 style="color:pink"> Lista de notas: </h2>
+
+        {% for nota in lista %}
+            {% if nota > 2%}
+            <h3 style="color: aquamarine;"> Nota: {{ nota }} </h3>
+            {% else %}
+            <h3 style="color:burlywood"> Nota: {{ nota }} </h3>
+            {% endif %}
+
+
+        {% endfor %}
+        
+</body>
+</html>
